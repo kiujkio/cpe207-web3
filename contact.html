@@ -16,6 +16,7 @@
 
     <!-- CSS
     ================================================== -->
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
@@ -84,57 +85,44 @@
             </div>
         </div>
             <div class="row contact-bottom">
-                    <div class="col-five tab-full contact-button" data-aos="fade-up">
-                        <a href="index.html" class="smoothscroll btn btn-animatedbg">
-                             
-                        </a>
-                    </div>
-        
-                    <div class="col-six tab-full contact-subscribe" data-aos="fade-up">
+                    
+                    <div>
                         <h4>Contact</h4>
         
-                        <form id="mc-form" class="group mc-form"  novalidate="true">
-                            <input type="email" value="" name="name"  placeholder="Name" required="">
-                            <input type="email" value="" name="EMAIL"  placeholder="Email Address"   >
-                            <input type="email" value="" name="message"  placeholder="message"   >
-                            <li><input type="reset" value="Reset" /></li>
-                            <li><input action="index.html" type="submit" value="Send Message" class="primary" /></li>
+                        <form id="book-form" class="mc-form">
+                                <div class="form-group">
+                                  <label for="title">Name</label>
+                                  <input type="text" id="title" class="form-control a" placeholde="name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="author">E-mail</label>
+                                  <input type="text" id="author" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                  <label for="isbn">message</label>
+                                  <input type="text" id="isbn" class="form-control">
+                                </div>
+                                <input type="submit" value="submit">
                         </form>
-                        
                     </div>
-                </div> <!-- end contact-button -->
+                    <br><br><br>
+                    <div>
+                      <table  width="80%">
+                            
+                            <tr>
+                              <th width="20%">Name</th>
+                              <th width="20%">E-mail</th>
+                              <th width="50%">message</th>
+                              <th width="10%"></th>
+                            </tr>
+                          
+                    <!-- 9. add placeholder to insert list of book       -->
+                          <tbody id="book-list"></tbody>
+                  </table>
+                
+                </div>
+                > <!-- end contact-button -->
         
-        <!-- Contact
-            <article id="contact">
-                <h2 class="major">Contact</h2>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="primary" /></li>
-                        <li><input type="reset" value="Reset" /></li>
-                    </ul>
-                </form>
-                <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </article> -->
-            
         <ul class="home-social">
             <li>
                 <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
@@ -219,5 +207,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+  <script src="js/main2.js"></script>
 </body>
